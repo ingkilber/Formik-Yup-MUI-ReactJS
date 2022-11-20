@@ -61,6 +61,7 @@ const NombreDeLaFuncion = () => {
             label="Nombre y Apellido"
             value={formik.values.name}
             onChange={formik.handleChange}
+            // touched: Valor para saber si el campo ha sido tocado o no
             error={formik.touched.name && Boolean(formik.errors.name)}
             helperText={formik.touched.name && formik.errors.name}
           />
